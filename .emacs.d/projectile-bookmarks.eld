@@ -1,0 +1,1 @@
+("~/Documents/Obsidian/obsidian/" "~/.emacs.d/elpa/pdf-tools-20240429.407/build/server/" "~/Downloads/" "~/.emacs.d/")

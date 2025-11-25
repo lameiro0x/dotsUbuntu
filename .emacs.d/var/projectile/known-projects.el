@@ -1,0 +1,1 @@
+("~/Documents/Obsidian/obsidian/" "~/.emacs.d/elpa/pdf-tools-20240429.407/build/server/" "~/apuntes-uni/" "~/.emacs.d/elpa/jedi-core-20210503.1315/")

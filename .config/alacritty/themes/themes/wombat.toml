@@ -1,0 +1,25 @@
+# Colors (Gruvbox Dark - ligeramente más oscuro)
+
+[colors.primary]
+background = '#1d2021'  # fondo principal más oscuro, pero aún cálido
+foreground = '#ebdbb2'  # texto principal, beige claro
+
+[colors.normal]
+black   = '#282828'  # fondo base
+red     = '#cc241d'  # rojo oscuro, errores
+green   = '#98971a'  # verde oliva
+yellow  = '#d79921'  # mostaza
+blue    = '#458588'  # azul apagado
+magenta = '#b16286'  # violeta cálido
+cyan    = '#689d6a'  # verde azulado
+white   = '#a89984'  # gris cálido claro
+
+[colors.bright]
+black   = '#928374'  # gris medio
+red     = '#fb4934'  # rojo más vivo
+green   = '#b8bb26'  # verde más brillante
+yellow  = '#fabd2f'  # amarillo más brillante
+blue    = '#83a598'  # azul más claro
+magenta = '#d3869b'  # rosa suave
+cyan    = '#8ec07c'  # verde azulado suave
+white   = '#ebdbb2'  # blanco/beige claro

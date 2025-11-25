@@ -1,0 +1,84 @@
+/* Gruvbox for Wofi – con toques rojos y fondo */
+
+* {
+    font-family: "FiraCode Nerd Font", "Fira Code", monospace;
+    font-size: 14px;
+}
+
+window {
+    margin: 0px;
+    border: 2px solid #3c3836; /* gris cálido */
+    background-color: rgba(40, 40, 40, 0.9);
+    background-image: url("file:///home/fomo/Pictures/fondos/10.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+#input {
+    padding: 4px;
+    margin: 10px;
+    margin-bottom: 2px;
+    padding-left: 20px;
+    border: none;
+    color: #ebdbb2;
+    font-weight: bold;
+    background-color: rgba(60, 56, 54, 0.9); /* más oscuro */
+    outline: none;
+    border-radius: 15px;
+}
+#input:focus {
+    border: 1px solid #cc241d; /* sutil rojo al enfocar */
+    margin-bottom: 0px;
+}
+
+#inner-box {
+    margin: 4px;
+    border: 1px solid #3c3836;
+    color: #ebdbb2;
+    font-weight: bold;
+    background-color: rgba(40, 40, 40, 0.85);
+    border-radius: 15px;
+}
+
+#outer-box {
+    margin: 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#scroll {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+#img:selected {
+    background-color: rgba(60, 56, 54, 0.8);
+    border-radius: 15px;
+}
+
+#text:selected {
+    color: #cc241d; /* rojo en selección */
+    background-color: rgba(60, 56, 54, 0.6);
+    margin: 0px;
+    border-radius: 15px;
+}
+
+#entry {
+    margin: 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #ebdbb2;
+}
+
+#entry:selected {
+    margin: 0px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(60, 56, 54, 0.6);
+    color: #cc241d;
+}

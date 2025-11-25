@@ -1,0 +1,22 @@
+import = [
+    "~/.config/alacritty/themes/themes/wombat.toml"
+]
+live_config_reload = true
+
+[font]
+size = 12
+
+[font.normal]
+family = "FiraCode Nerd Font"
+#style = "Regular"
+
+[window]
+decorations = "none"
+dynamic_padding = false
+opacity = 0.73
+
+[window.padding]
+x = 18
+y = 16
+
+

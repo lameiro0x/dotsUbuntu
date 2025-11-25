@@ -1,0 +1,111 @@
+{
+  "output": "eDP-1",
+
+  "margin-top" : 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "height" : 30,
+    "spacing": 0, 
+    "modules-left": [
+      "hyprland/window"
+    ],
+    "modules-center": [
+      "hyprland/workspaces"
+    ],
+    "modules-right": [
+    "pulseaudio",
+    "custom/vpn",
+    "temperature",
+    "battery",
+    "clock"
+    ],
+    "hyprland/window": {
+      "format": "{}",
+      "max-length": 35,
+      "rewrite": {
+        "": "Fomo"
+      },
+      "separate-outputs": true
+    },
+"hyprland/workspaces": {
+    	"format": "{icon}",
+    	"format-icons": {
+    		"1": "",
+    		"2": "",
+    		"3": "󰒃",
+    		"4": "",
+    		"5": "",
+        "6": "",
+        "7": "",
+        "8": "",
+        "9": "󰒃",
+    		"active": "",
+    		"default": ""
+    	},
+           "persistent-workspaces": {
+                 "*": 3, 
+                 "HDMI-A-4": 3,
+                 "HDMI-A-2": 3 
+           }
+    },
+    "clock": {
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+      "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+      "format": "  {usage}%",
+      "tooltip": false
+    },
+    "memory": {
+      "format": "{}%  "
+    },
+    "temperature": {
+      "critical-threshold": 80,
+      "format": "{icon} {temperatureC}°C",
+      "format-icons": ["", "", ""]
+    },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon}  {capacity}%",
+      "format-full": "{icon}  {capacity}%",
+      "format-charging": "  {capacity}%",
+      "format-plugged": "  {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+      "interface": "enp2s0",
+      "format-wifi": "  {signalStrength}%",
+      "format-ethernet": "{cidr} ",
+      "tooltip-format": "{ifname} via {gwaddr} ",
+      "format-linked": "{ifname} (No IP) ",
+      "format-disconnected": " ⚠ ",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+	"custom/vpn": {
+	    "format": "󰩠 {}",
+	    "exec": "curl -s ipv4.icanhazip.com",
+	    "interval": 30
+	},
+	    
+    "pulseaudio": {
+      "format": "{icon}  {volume}%",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": "",
+      "format-icons": {
+        "headphone": "",
+        "hands-free": "",
+        "headset": "",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol"
+    }
+}

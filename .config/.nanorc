@@ -1,0 +1,24 @@
+## === Configuración básica para C en Ubuntu (Nano 7.2) ===
+
+# --- Comodidad ---
+set linenumbers          # Muestra números de línea
+set tabsize 4            # Tamaño del tabulador
+set autoindent           # Indentación automática
+set softwrap             # Ajuste de línea visual (sin cortar palabras)
+set constantshow         # Muestra posición del cursor en la barra inferior
+set indicator            # Barra lateral de posición (desde Nano 6+)
+set mouse                # Permite usar el ratón
+
+# --- Colores de interfaz ---
+set titlecolor cyan,black
+set statuscolor white,blue
+set selectedcolor black,cyan
+set numbercolor yellow,black
+
+# --- Resaltado de sintaxis ---
+# Incluye todos los esquemas disponibles (C, C++, Python, etc.)
+include "/usr/share/nano/*.nanorc"
+
+# Si prefieres solo C y C++, comenta la línea anterior y usa estas:
+# include "/usr/share/nano/c.nanorc"
+# include "/usr/share/nano/c++.nanorc"
