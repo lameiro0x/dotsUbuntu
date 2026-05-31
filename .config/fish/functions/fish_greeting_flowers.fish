@@ -11,17 +11,22 @@ function fish_greeting
 "
 
     clear
-    # Mismo efecto de tecleo, pero revelando por lotes para no forkear
-    # el comando externo 'sleep' una vez por carácter (~720 -> ~50 forks).
-    set -l chars (string split '' $banner)
-    set -l n (count $chars)
-    set -l i 1
-    while test $i -le $n
-        set -l j (math $i + 14)
-        test $j -gt $n; and set j $n
-        printf '%s' $chars[$i..$j]
-        set i (math $j + 1)
-        sleep 0.012
+    set -l cols (tput cols)
+
+    for char in (string split '' $banner)
+        printf "%s" $char
+
+        # flores sakura suaves
+        if test (random 1 18) -eq 1
+            printf "\033[s"
+            # rosa muy claro (casi blanco)
+            printf "\033[38;2;255;220;235m"
+            printf "\033[%d;%dH✿" (random 1 8) (random 1 $cols)
+            printf "\033[0m"
+            printf "\033[u"
+        end
+
+        sleep 0.0015
     end
     echo
 end

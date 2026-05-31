@@ -1,1 +1,17 @@
-DS_Store
+# macOS / cruft
+.DS_Store
+
+# Backups y temporales de editores/programas
+*.bak
+*.save
+*.save.*
+*~
+
+# Copias accidentales de archivos/carpetas
+*\ (copy*)
+
+# Caches generadas
+mimeinfo.cache
+
+# Config local de fish (rutas/aliases personales por máquina)
+.config/fish/config.local.fish
